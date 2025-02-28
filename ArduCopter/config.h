@@ -609,10 +609,8 @@
 # define ADVANCED_FAILSAFE DISABLED
 #endif
 
-//first test code v21
-
 #ifndef CH_MODE_DEFAULT
- # define CH_MODE_DEFAULT   5
+ # define CH_MODE_DEFAULT   8
 #endif
 
 #ifndef TOY_MODE_ENABLED
