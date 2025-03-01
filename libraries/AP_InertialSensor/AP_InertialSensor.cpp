@@ -1588,8 +1588,8 @@ bool AP_InertialSensor::accel_calibrated_ok_all() const
             }
         }
     }
-    /*
-    
+    */
+
     // if we got this far the accelerometers must have been calibrated
     return true;
 }
