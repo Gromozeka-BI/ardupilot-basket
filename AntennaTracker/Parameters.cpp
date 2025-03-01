@@ -274,9 +274,8 @@ const AP_Param::Info Tracker::var_info[] = {
 
     // @Group: AHRS_
     // @Path: ../libraries/AP_AHRS/AP_AHRS.cpp
-    //GOBJECT(ahrs,                   "AHRS_",    AP_AHRS),
-    //"Менял"
-    
+    GOBJECT(ahrs,                   "AHRS_",    AP_AHRS),
+
 #if AP_SIM_ENABLED
     // @Group: SIM_
     // @Path: ../libraries/SITL/SITL.cpp
