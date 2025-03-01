@@ -472,7 +472,7 @@
 #ifndef DEFAULT_ANGLE_MAX
  # define DEFAULT_ANGLE_MAX         3000            // ANGLE_MAX parameters default value
  // define DEFAULT_ANGLE_MAX         1500            // ANGLE_MAX parameters default value
- //"Не Менял"
+ //"Не Менял" v2
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
