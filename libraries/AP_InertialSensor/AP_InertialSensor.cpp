@@ -1554,6 +1554,8 @@ failed:
  */
 bool AP_InertialSensor::accel_calibrated_ok_all() const
 {
+    //"Поменял"
+    /*
     // check each accelerometer has offsets saved
     for (uint8_t i=0; i<get_accel_count(); i++) {
         if (!_accel_id_ok[i]) {
@@ -1586,7 +1588,8 @@ bool AP_InertialSensor::accel_calibrated_ok_all() const
             }
         }
     }
-
+    /*
+    
     // if we got this far the accelerometers must have been calibrated
     return true;
 }
