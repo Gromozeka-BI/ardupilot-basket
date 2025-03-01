@@ -356,6 +356,7 @@ const AP_Param::Info Copter::var_info[] = {
     // @Range: 1000 8000
     // @User: Advanced
     ASCALAR(angle_max, "ANGLE_MAX",                 DEFAULT_ANGLE_MAX),
+    //"Поменять"
 
 #if MODE_POSHOLD_ENABLED == ENABLED
     // @Param: PHLD_BRAKE_RATE
@@ -547,7 +548,7 @@ const AP_Param::Info Copter::var_info[] = {
     // @Group: AHRS_
     // @Path: ../libraries/AP_AHRS/AP_AHRS.cpp
     GOBJECT(ahrs,                   "AHRS_",    AP_AHRS),
-
+    //"Поменять"
 #if HAL_MOUNT_ENABLED
     // @Group: MNT
     // @Path: ../libraries/AP_Mount/AP_Mount.cpp
