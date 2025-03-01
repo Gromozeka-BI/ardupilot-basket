@@ -470,9 +470,9 @@
  # define ROLL_PITCH_YAW_INPUT_MAX      4500        // roll, pitch and yaw input range
 #endif
 #ifndef DEFAULT_ANGLE_MAX
- //# define DEFAULT_ANGLE_MAX         3000            // ANGLE_MAX parameters default value
- # define DEFAULT_ANGLE_MAX         1500            // ANGLE_MAX parameters default value
- //"Менял"
+ # define DEFAULT_ANGLE_MAX         3000            // ANGLE_MAX parameters default value
+ // define DEFAULT_ANGLE_MAX         1500            // ANGLE_MAX parameters default value
+ //"Не Менял"
 #endif
 
 //////////////////////////////////////////////////////////////////////////////

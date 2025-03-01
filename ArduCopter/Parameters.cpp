@@ -339,6 +339,7 @@ const AP_Param::Info Copter::var_info[] = {
     // @Group: ARMING_
     // @Path: ../libraries/AP_Arming/AP_Arming.cpp
     GOBJECT(arming,                 "ARMING_", AP_Arming_Copter),
+    //"Не менять"
 
     // @Param: DISARM_DELAY
     // @DisplayName: Disarm delay
@@ -500,7 +501,7 @@ const AP_Param::Info Copter::var_info[] = {
     // @Group: ATC_
     // @Path: ../libraries/AC_AttitudeControl/AC_AttitudeControl.cpp,../libraries/AC_AttitudeControl/AC_AttitudeControl_Multi.cpp,../libraries/AC_AttitudeControl/AC_AttitudeControl_Heli.cpp
     GOBJECTVARPTR(attitude_control, "ATC_", &copter.attitude_control_var_info),
-
+    // "Поменять"
     // @Group: PSC
     // @Path: ../libraries/AC_AttitudeControl/AC_PosControl.cpp
     GOBJECTPTR(pos_control, "PSC", AC_PosControl),

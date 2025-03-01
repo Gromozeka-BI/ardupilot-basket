@@ -60,18 +60,18 @@ const AP_Param::GroupInfo AP_AHRS::var_info[] = {
     // @Range: 0.0 1.0
     // @Increment: .01
     // @User: Advanced
-    //AP_GROUPINFO("GPS_GAIN",  2, AP_AHRS, gps_gain, 1.0f),
-    AP_GROUPINFO("GPS_GAIN",  2, AP_AHRS, gps_gain, 0.0f),
-    //"Менял"
+    AP_GROUPINFO("GPS_GAIN",  2, AP_AHRS, gps_gain, 1.0f),
+    //AP_GROUPINFO("GPS_GAIN",  2, AP_AHRS, gps_gain, 0.0f),
+    //"Не менял"
 
     // @Param: GPS_USE
     // @DisplayName: AHRS use GPS for DCM navigation and position-down
     // @Description: This controls whether to use dead-reckoning or GPS based navigation. If set to 0 then the GPS won't be used for navigation, and only dead reckoning will be used. A value of zero should never be used for normal flight. Currently this affects only the DCM-based AHRS: the EKF uses GPS according to its own parameters. A value of 2 means to use GPS for height as well as position - both in DCM estimation and when determining altitude-above-home.
     // @Values: 0:Disabled,1:Use GPS for DCM position,2:Use GPS for DCM position and height
     // @User: Advanced
-    //AP_GROUPINFO("GPS_USE",  3, AP_AHRS, _gps_use, float(GPSUse::Enable)),
-    AP_GROUPINFO("GPS_USE",  3, AP_AHRS, _gps_use, float(GPSUse::Disable)),
-    //"Менял"
+    AP_GROUPINFO("GPS_USE",  3, AP_AHRS, _gps_use, float(GPSUse::Enable)),
+    //AP_GROUPINFO("GPS_USE",  3, AP_AHRS, _gps_use, float(GPSUse::Disable)),
+     //"Не менял"
 
     // @Param: YAW_P
     // @DisplayName: Yaw P
@@ -130,9 +130,9 @@ const AP_Param::GroupInfo AP_AHRS::var_info[] = {
     // @Description: Overall board orientation relative to the standard orientation for the board type. This rotates the IMU and compass readings to allow the board to be oriented in your vehicle at any 90 or 45 degree angle. The label for each option is specified in the order of rotations for that orientation. This option takes affect on next boot. After changing you will need to re-level your vehicle. Firmware versions 4.2 and prior can use a CUSTOM (100) rotation to set the AHRS_CUSTOM_ROLL/PIT/YAW angles for AHRS orientation. Later versions provide two general custom rotations which can be used, Custom 1 and Custom 2, with CUST_ROT1_ROLL/PIT/YAW or CUST_ROT2_ROLL/PIT/YAW angles.
     // @Values: 0:None,1:Yaw45,2:Yaw90,3:Yaw135,4:Yaw180,5:Yaw225,6:Yaw270,7:Yaw315,8:Roll180,9:Yaw45Roll180,10:Yaw90Roll180,11:Yaw135Roll180,12:Pitch180,13:Yaw225Roll180,14:Yaw270Roll180,15:Yaw315Roll180,16:Roll90,17:Yaw45Roll90,18:Yaw90Roll90,19:Yaw135Roll90,20:Roll270,21:Yaw45Roll270,22:Yaw90Roll270,23:Yaw135Roll270,24:Pitch90,25:Pitch270,26:Yaw90Pitch180,27:Yaw270Pitch180,28:Pitch90Roll90,29:Pitch90Roll180,30:Pitch90Roll270,31:Pitch180Roll90,32:Pitch180Roll270,33:Pitch270Roll90,34:Pitch270Roll180,35:Pitch270Roll270,36:Yaw90Pitch180Roll90,37:Yaw270Roll90,38:Yaw293Pitch68Roll180,39:Pitch315,40:Pitch315Roll90,42:Roll45,43:Roll315,100:Custom 4.1 and older,101:Custom 1,102:Custom 2
     // @User: Advanced
-    //AP_GROUPINFO("ORIENTATION", 9, AP_AHRS, _board_orientation, 0),
-    AP_GROUPINFO("ORIENTATION", 9, AP_AHRS, _board_orientation, 8),
-    //"Менял"
+    AP_GROUPINFO("ORIENTATION", 9, AP_AHRS, _board_orientation, 0),
+    //AP_GROUPINFO("ORIENTATION", 9, AP_AHRS, _board_orientation, 8),
+     //"Не менял"
     
     // @Param: COMP_BETA
     // @DisplayName: AHRS Velocity Complementary Filter Beta Coefficient
