@@ -160,8 +160,10 @@ const AP_Param::GroupInfo AP_AHRS::var_info[] = {
     // @Description: This controls which NavEKF Kalman filter version is used for attitude and position estimation
     // @Values: 0:Disabled,2:Enable EKF2,3:Enable EKF3,11:ExternalAHRS
     // @User: Advanced
-    AP_GROUPINFO("EKF_TYPE",  14, AP_AHRS, _ekf_type, HAL_AHRS_EKF_TYPE_DEFAULT),
-
+    //AP_GROUPINFO("EKF_TYPE",  14, AP_AHRS, _ekf_type, HAL_AHRS_EKF_TYPE_DEFAULT),
+    AP_GROUPINFO("EKF_TYPE",  3, AP_AHRS, _ekf_type, HAL_AHRS_EKF_TYPE_DEFAULT),
+    //"Менял"
+    
     // @Param: CUSTOM_ROLL
     // @DisplayName: Board orientation roll offset
     // @Description: Autopilot mounting position roll offset. Positive values = roll right, negative values = roll left. This parameter is only used when AHRS_ORIENTATION is set to CUSTOM.
