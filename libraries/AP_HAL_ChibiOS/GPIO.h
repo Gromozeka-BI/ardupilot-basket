@@ -62,8 +62,8 @@ public:
 
     /* return true if USB cable is connected */
     bool    usb_connected(void) override;
-
-    void set_usb_connected() { _usb_connected = true; }
+    //"Изменил true на false"
+    void set_usb_connected() { _usb_connected = false; }
 
     /* attach interrupt via ioline_t */
     bool _attach_interrupt(ioline_t line, AP_HAL::Proc p, uint8_t mode);
