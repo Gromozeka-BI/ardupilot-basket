@@ -39,7 +39,8 @@
 #include <hwdef.h>
 
 #ifndef DEFAULT_SERIAL0_BAUD
-#define SERIAL0_BAUD 115200
+//#define SERIAL0_BAUD 115200
+#define SERIAL0_BAUD 1500000 // "Поменял стандартную скорость"
 #else
 #define SERIAL0_BAUD DEFAULT_SERIAL0_BAUD
 #endif
