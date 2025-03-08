@@ -97,8 +97,10 @@ define DEFAULT_SERIAL6_PROTOCOL SerialProtocol_GPS
 define DEFAULT_SERIAL6_BAUD AP_SERIALMANAGER_GPS_BAUD
 
 # PA10 IO-debug-console
-PA11 OTG_FS_DM OTG1
-PA12 OTG_FS_DP OTG1
+# PA11 OTG_FS_DM OTG1
+# PA12 OTG_FS_DP OTG1
+PA12 OTG_FS_DM OTG1
+PA11 OTG_FS_DP OTG1
 
 # PWM out pins. Note that channel order follows the ArduPilot motor
 # order conventions
